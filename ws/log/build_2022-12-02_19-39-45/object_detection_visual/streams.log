@@ -1,0 +1,197 @@
+[0.018s] Invoking command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake /home/radu/camera_detection_assignment/ws/src/object_detection_visual -DCMAKE_INSTALL_PREFIX=/home/radu/camera_detection_assignment/ws/install/object_detection_visual
+[0.126s] -- The C compiler identification is GNU 9.4.0
+[0.180s] -- The CXX compiler identification is GNU 9.4.0
+[0.187s] -- Check for working C compiler: /usr/bin/cc
+[0.279s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.281s] -- Detecting C compiler ABI info
+[0.417s] -- Detecting C compiler ABI info - done
+[0.436s] -- Detecting C compile features
+[0.436s] -- Detecting C compile features - done
+[0.440s] -- Check for working CXX compiler: /usr/bin/c++
+[0.512s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.513s] -- Detecting CXX compiler ABI info
+[0.596s] -- Detecting CXX compiler ABI info - done
+[0.611s] -- Detecting CXX compile features
+[0.611s] -- Detecting CXX compile features - done
+[0.616s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.650s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.650s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.892s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.946s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.953s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.045s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.074s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.216s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.219s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.220s] -- Looking for pthread.h
+[1.285s] -- Looking for pthread.h - found
+[1.286s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.368s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.368s] -- Looking for pthread_create in pthreads
+[1.438s] -- Looking for pthread_create in pthreads - not found
+[1.438s] -- Looking for pthread_create in pthread
+[1.520s] -- Looking for pthread_create in pthread - found
+[1.521s] -- Found Threads: TRUE  
+[1.673s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.778s] -- Looking for gz-rendering7 -- found version 7.2.0
+[1.786s] -- Searching for dependencies of gz-rendering7
+[1.789s] -- Looking for gz-math7 -- found version 7.1.0
+[1.790s] -- Searching for dependencies of gz-math7
+[1.792s] -- Looking for gz-utils2 -- found version 2.0.0
+[1.793s] -- Searching for dependencies of gz-utils2
+[1.794s] -- Searching for <gz-math7> component [eigen3]
+[1.797s] -- Looking for gz-math7-eigen3 -- found version 7.1.0
+[1.797s] -- Searching for dependencies of gz-math7-eigen3
+[1.805s] -- Looking for gz-common5 -- found version 5.3.1
+[1.805s] -- Searching for dependencies of gz-common5
+[1.805s] -- Looking for gz-utils2 -- found version 2.0.0
+[1.806s] -- Looking for dlfcn.h - found
+[1.807s] -- Looking for libdl - found
+[1.808s] -- Found DL: TRUE  
+[1.813s] -- Checking for module 'uuid'
+[1.829s] --   Found uuid, version 2.34.0
+[1.872s] -- Found UUID: TRUE  
+[1.873s] -- Searching for <gz-common5> component [graphics]
+[1.876s] -- Looking for gz-common5-graphics -- found version 5.3.1
+[1.876s] -- Searching for dependencies of gz-common5-graphics
+[1.877s] -- Looking for gz-math7 -- found version 7.1.0
+[1.881s] -- Found GzAssimp: TRUE (found version "5.0.0") 
+[1.883s] -- Searching for <gz-common5> component [events]
+[1.885s] -- Looking for gz-common5-events -- found version 5.3.1
+[1.886s] -- Searching for dependencies of gz-common5-events
+[1.886s] -- Looking for gz-math7 -- found version 7.1.0
+[1.887s] -- Searching for <gz-common5> component [geospatial]
+[1.889s] -- Looking for gz-common5-geospatial -- found version 5.3.1
+[1.890s] -- Searching for dependencies of gz-common5-geospatial
+[1.890s] -- Looking for gz-math7 -- found version 7.1.0
+[1.892s] -- Looking for gz-common5 -- found version 5.3.1
+[1.894s] -- Looking for gz-plugin2 -- found version 2.0.1
+[1.895s] -- Searching for dependencies of gz-plugin2
+[1.895s] -- Looking for gz-utils2 -- found version 2.0.0
+[1.896s] -- Searching for dependencies of gz-utils2
+[1.896s] -- Searching for <gz-utils2> component [cli]
+[1.898s] -- Looking for gz-utils2-cli -- found version 2.0.0
+[1.898s] -- Searching for dependencies of gz-utils2-cli
+[1.900s] -- Searching for <gz-plugin2> component [all]
+[1.903s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.1
+[1.904s] -- Looking for gz-plugin2 -- found version 2.0.1
+[1.906s] -- Looking for gz-plugin2-loader -- found version 2.0.1
+[1.907s] -- Searching for dependencies of gz-plugin2-loader
+[1.910s] -- Looking for gz-plugin2-register -- found version 2.0.1
+[1.911s] -- Searching for dependencies of gz-plugin2-register
+[1.912s] -- Looking for gz-utils2 -- found version 2.0.0
+[1.913s] -- Searching for <gz-rendering7> component [ogre]
+[1.916s] -- Looking for gz-rendering7-ogre -- found version 7.2.0
+[1.916s] -- Searching for dependencies of gz-rendering7-ogre
+[1.923s] CMake Warning (dev) at /usr/share/cmake-3.16/Modules/FindOpenGL.cmake:275 (message):
+[1.923s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[1.923s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[1.923s]   cmake_policy command to set the policy and suppress this warning.
+[1.923s] 
+[1.923s]   FindOpenGL found both a legacy GL library:
+[1.923s] 
+[1.923s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[1.923s] 
+[1.923s]   and GLVND libraries for OpenGL and GLX:
+[1.924s] 
+[1.924s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[1.924s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[1.924s] 
+[1.924s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[1.924s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[1.924s] Call Stack (most recent call first):
+[1.924s]   /usr/lib/x86_64-linux-gnu/cmake/gz-rendering7-ogre/gz-rendering7-ogre-config.cmake:114 (find_package)
+[1.924s]   /usr/lib/x86_64-linux-gnu/cmake/gz-rendering7/gz-rendering7-config.cmake:206 (find_package)
+[1.924s]   CMakeLists.txt:24 (find_package)
+[1.924s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.924s] 
+[1.924s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.925s] -- Searching for <gz-rendering7> component [ogre2]
+[1.928s] -- Looking for gz-rendering7-ogre2 -- found version 7.2.0
+[1.928s] -- Searching for dependencies of gz-rendering7-ogre2
+[1.934s] -- Looking for gz-sensors7 -- found version 7.0.0
+[1.934s] -- Searching for dependencies of gz-sensors7
+[1.963s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[1.964s] -- Looking for gz-math7 -- found version 7.1.0
+[1.965s] -- Looking for gz-common5 -- found version 5.3.1
+[1.965s] -- Searching for dependencies of gz-common5
+[1.965s] -- Looking for gz-utils2 -- found version 2.0.0
+[1.965s] -- Looking for dlfcn.h - found
+[1.966s] -- Looking for libdl - found
+[1.974s] -- Searching for <gz-common5> component [profiler]
+[1.976s] -- Looking for gz-common5-profiler -- found version 5.3.1
+[1.977s] -- Searching for dependencies of gz-common5-profiler
+[1.981s] -- Looking for gz-transport12 -- found version 12.0.0
+[1.981s] -- Searching for dependencies of gz-transport12
+[2.010s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.014s] -- Checking for module 'libzmq >= 4'
+[2.032s] --   Found libzmq , version 4.3.2
+[2.076s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.083s] -- Looking for gz-utils2 -- found version 2.0.0
+[2.086s] -- Looking for gz-msgs9 -- found version 9.2.0
+[2.087s] -- Searching for dependencies of gz-msgs9
+[2.105s] -- Looking for gz-math7 -- found version 7.1.0
+[2.109s] -- Checking for module 'tinyxml2'
+[2.126s] --   Found tinyxml2, version 6.2.0
+[2.170s] -- Looking for gz-rendering7 -- found version 7.2.0
+[2.170s] -- Looking for gz-msgs9 -- found version 9.2.0
+[2.173s] -- Looking for sdformat13 -- found version 13.2.0
+[2.174s] -- Searching for dependencies of sdformat13
+[2.181s] -- Looking for gz-math7 -- found version 7.1.0
+[2.181s] -- Looking for gz-utils2 -- found version 2.0.0
+[2.183s] -- Searching for <gz-sensors7> component [rendering]
+[2.186s] -- Looking for gz-sensors7-rendering -- found version 7.0.0
+[2.187s] -- Searching for dependencies of gz-sensors7-rendering
+[2.188s] -- Searching for <gz-sensors7> component [camera]
+[2.191s] -- Looking for gz-sensors7-camera -- found version 7.0.0
+[2.191s] -- Searching for dependencies of gz-sensors7-camera
+[2.195s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.263s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.264s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.265s] -- Configured cppcheck include dirs: /home/radu/camera_detection_assignment/ws/src/object_detection_visual/include
+[2.265s] -- Configured cppcheck exclude dirs and/or files: 
+[2.266s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.266s] -- Configured cpplint exclude dirs and/or files: 
+[2.267s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.268s] -- Added test 'lint_cmake' to check CMake code style
+[2.268s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.270s] -- Added test 'uncrustify' to check C / C++ code style
+[2.270s] -- Configured uncrustify additional arguments: 
+[2.270s] -- Added test 'xmllint' to check XML markup files
+[2.274s] -- Configuring done
+[2.282s] -- Generating done
+[2.284s] -- Build files have been written to: /home/radu/camera_detection_assignment/ws/build/object_detection_visual
+[2.292s] Invoked command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake /home/radu/camera_detection_assignment/ws/src/object_detection_visual -DCMAKE_INSTALL_PREFIX=/home/radu/camera_detection_assignment/ws/install/object_detection_visual
+[2.294s] Invoking command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --build /home/radu/camera_detection_assignment/ws/build/object_detection_visual -- -j12 -l12
+[2.332s] [35m[1mScanning dependencies of target object_detection_visual[0m
+[2.456s] [ 50%] [32mBuilding CXX object CMakeFiles/object_detection_visual.dir/src/object_detection_visual_node.cpp.o[0m
+[6.870s] [100%] [32m[1mLinking CXX executable object_detection_visual[0m
+[7.092s] [100%] Built target object_detection_visual
+[7.102s] Invoked command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --build /home/radu/camera_detection_assignment/ws/build/object_detection_visual -- -j12 -l12
+[7.137s] Invoking command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --install /home/radu/camera_detection_assignment/ws/build/object_detection_visual
+[7.145s] -- Install configuration: ""
+[7.145s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/lib/object_detection_visual/object_detection_visual
+[7.147s] -- Set runtime path of "/home/radu/camera_detection_assignment/ws/install/object_detection_visual/lib/object_detection_visual/object_detection_visual" to ""
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch/object_detection_visual.launch.py
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models/wheeled_robot.sdf
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz/wheeled_robot.rviz
+[7.147s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/package_run_dependencies/object_detection_visual
+[7.148s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/parent_prefix_path/object_detection_visual
+[7.148s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.sh
+[7.148s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.dsv
+[7.148s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.sh
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.dsv
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.bash
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.sh
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.zsh
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.dsv
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.dsv
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/packages/object_detection_visual
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig.cmake
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig-version.cmake
+[7.149s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.xml
+[7.153s] Invoked command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --install /home/radu/camera_detection_assignment/ws/build/object_detection_visual

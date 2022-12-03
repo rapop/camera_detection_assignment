@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000095] (object_detection_visual) JobQueued: {'identifier': 'object_detection_visual', 'dependencies': OrderedDict()}
+[0.000122] (object_detection_visual) JobStarted: {'identifier': 'object_detection_visual'}
+[0.013833] (object_detection_visual) JobProgress: {'identifier': 'object_detection_visual', 'progress': 'cmake'}
+[0.013928] (object_detection_visual) Command: {'cmd': ['/usr/bin/cmake', '/home/radu/camera_detection_assignment/ws/src/object_detection_visual', '-DCMAKE_INSTALL_PREFIX=/home/radu/camera_detection_assignment/ws/install/object_detection_visual'], 'cwd': '/home/radu/camera_detection_assignment/ws/build/object_detection_visual', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'radu'), ('SSH_AGENT_PID', '2236'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib:/home/radu/ws_moveit2/install/moveit_visual_tools/lib:/home/radu/ws_moveit2/install/rviz_visual_tools/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib'), ('HOME', '/home/radu'), ('OLDPWD', '/home/radu/camera_detection_assignment'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install:/home/radu/ws_moveit2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'radu'), ('JOURNAL_STREAM', '8:44762'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib/pkgconfig:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib/pkgconfig'), ('SCONS_CPU', '10'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'radu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/rolling/bin:/home/radu/aos-platform/bin:/home/radu/.local/bin:/home/radu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/radu-XPS-15-7590:@/tmp/.ICE-unix/2265,unix/radu-XPS-15-7590:/tmp/.ICE-unix/2265'), ('INVOCATION_ID', 'fd4015f925084a9f9095af133e74a7f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/07c40ba3_53e6_4486_bf49_9fef09e79585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/radu/camera_detection_assignment/ws/build/object_detection_visual'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib/python3.8/site-packages:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/camera_detection_assignment/ws/install/gz-transport12:/home/radu/camera_detection_assignment/ws/install/gz-math7:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling')]), 'shell': False}
+[0.099768] (-) TimerEvent: {}
+[0.125925] (object_detection_visual) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.179707] (object_detection_visual) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.187157] (object_detection_visual) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199824] (-) TimerEvent: {}
+[0.278725] (object_detection_visual) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.281061] (object_detection_visual) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299962] (-) TimerEvent: {}
+[0.400314] (-) TimerEvent: {}
+[0.416597] (object_detection_visual) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.435606] (object_detection_visual) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.436117] (object_detection_visual) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.439563] (object_detection_visual) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.500430] (-) TimerEvent: {}
+[0.512184] (object_detection_visual) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.513180] (object_detection_visual) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.595807] (object_detection_visual) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.600540] (-) TimerEvent: {}
+[0.610812] (object_detection_visual) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.611508] (object_detection_visual) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.615543] (object_detection_visual) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.649890] (object_detection_visual) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.650171] (object_detection_visual) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700657] (-) TimerEvent: {}
+[0.800886] (-) TimerEvent: {}
+[0.892044] (object_detection_visual) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.900995] (-) TimerEvent: {}
+[0.946136] (object_detection_visual) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.953387] (object_detection_visual) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.001118] (-) TimerEvent: {}
+[1.044763] (object_detection_visual) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.074143] (object_detection_visual) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.101226] (-) TimerEvent: {}
+[1.151848] (object_detection_visual) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201345] (-) TimerEvent: {}
+[1.216367] (object_detection_visual) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.218623] (object_detection_visual) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.219947] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.285505] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.285720] (object_detection_visual) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301464] (-) TimerEvent: {}
+[1.368267] (object_detection_visual) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.368528] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.401592] (-) TimerEvent: {}
+[1.437934] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.438201] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.501718] (-) TimerEvent: {}
+[1.519885] (object_detection_visual) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.521143] (object_detection_visual) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.601830] (-) TimerEvent: {}
+[1.672706] (object_detection_visual) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[1.701933] (-) TimerEvent: {}
+[1.777790] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.2.0\n'}
+[1.786456] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7\n'}
+[1.789262] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[1.789616] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.792243] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.792603] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.794181] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.796898] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.1.0\n'}
+[1.797312] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.802032] (-) TimerEvent: {}
+[1.804738] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.3.1\n'}
+[1.805173] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.805437] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.806030] (object_detection_visual) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.807031] (object_detection_visual) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.808292] (object_detection_visual) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.812801] (object_detection_visual) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.829293] (object_detection_visual) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[1.872067] (object_detection_visual) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.873079] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.875979] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.3.1\n'}
+[1.876428] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.876691] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[1.881443] (object_detection_visual) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.0.0") \n'}
+[1.882403] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.885183] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.3.1\n'}
+[1.885646] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.885807] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[1.886736] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.889483] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.3.1\n'}
+[1.889875] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.890257] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[1.891458] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.3.1\n'}
+[1.894252] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.1\n'}
+[1.894867] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.895030] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.895308] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[1.896124] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[1.898153] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.0.0\n'}
+[1.898556] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[1.900271] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.902126] (-) TimerEvent: {}
+[1.903259] (object_detection_visual) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.1\n'}
+[1.903701] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.1\n'}
+[1.906416] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.1\n'}
+[1.906825] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[1.910423] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.1\n'}
+[1.910832] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[1.912360] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.913211] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-rendering7> component [ogre]\n'}
+[1.915972] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-rendering7-ogre -- found version 7.2.0\n'}
+[1.916377] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7-ogre\n'}
+[1.923039] (object_detection_visual) StderrLine: {'line': b'CMake Warning (dev) at /usr/share/cmake-3.16/Modules/FindOpenGL.cmake:275 (message):\n'}
+[1.923146] (object_detection_visual) StderrLine: {'line': b'  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when\n'}
+[1.923209] (object_detection_visual) StderrLine: {'line': b'  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the\n'}
+[1.923265] (object_detection_visual) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[1.923320] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.923371] (object_detection_visual) StderrLine: {'line': b'  FindOpenGL found both a legacy GL library:\n'}
+[1.923422] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.923474] (object_detection_visual) StderrLine: {'line': b'    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so\n'}
+[1.923527] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.923579] (object_detection_visual) StderrLine: {'line': b'  and GLVND libraries for OpenGL and GLX:\n'}
+[1.923631] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.923712] (object_detection_visual) StderrLine: {'line': b'    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so\n'}
+[1.923773] (object_detection_visual) StderrLine: {'line': b'    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so\n'}
+[1.923825] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.923877] (object_detection_visual) StderrLine: {'line': b'  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for\n'}
+[1.923929] (object_detection_visual) StderrLine: {'line': b'  compatibility with CMake 3.10 and below the legacy GL library will be used.\n'}
+[1.923982] (object_detection_visual) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.924034] (object_detection_visual) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gz-rendering7-ogre/gz-rendering7-ogre-config.cmake:114 (find_package)\n'}
+[1.924088] (object_detection_visual) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gz-rendering7/gz-rendering7-config.cmake:206 (find_package)\n'}
+[1.924144] (object_detection_visual) StderrLine: {'line': b'  CMakeLists.txt:24 (find_package)\n'}
+[1.924196] (object_detection_visual) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.924247] (object_detection_visual) StderrLine: {'line': b'\n'}
+[1.924298] (object_detection_visual) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.924909] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-rendering7> component [ogre2]\n'}
+[1.927692] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-rendering7-ogre2 -- found version 7.2.0\n'}
+[1.928303] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering7-ogre2\n'}
+[1.933594] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-sensors7 -- found version 7.0.0\n'}
+[1.933963] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7\n'}
+[1.963493] (object_detection_visual) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[1.964427] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[1.964750] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.3.1\n'}
+[1.965163] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.965430] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[1.965557] (object_detection_visual) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.965627] (object_detection_visual) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.973586] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.976446] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.3.1\n'}
+[1.976878] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.980724] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-transport12 -- found version 12.0.0\n'}
+[1.981092] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport12\n'}
+[2.002232] (-) TimerEvent: {}
+[2.010354] (object_detection_visual) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.014379] (object_detection_visual) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.032258] (object_detection_visual) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[2.075544] (object_detection_visual) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.083273] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[2.086247] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.2.0\n'}
+[2.086630] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs9\n'}
+[2.102338] (-) TimerEvent: {}
+[2.105001] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[2.109402] (object_detection_visual) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.125859] (object_detection_visual) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[2.169911] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-rendering7 -- found version 7.2.0\n'}
+[2.170186] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-msgs9 -- found version 9.2.0\n'}
+[2.173432] (object_detection_visual) StdoutLine: {'line': b'-- Looking for sdformat13 -- found version 13.2.0\n'}
+[2.173904] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of sdformat13\n'}
+[2.180873] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.1.0\n'}
+[2.181233] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.0.0\n'}
+[2.183152] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [rendering]\n'}
+[2.186267] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-sensors7-rendering -- found version 7.0.0\n'}
+[2.186760] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-rendering\n'}
+[2.187706] (object_detection_visual) StdoutLine: {'line': b'-- Searching for <gz-sensors7> component [camera]\n'}
+[2.190743] (object_detection_visual) StdoutLine: {'line': b'-- Looking for gz-sensors7-camera -- found version 7.0.0\n'}
+[2.191209] (object_detection_visual) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors7-camera\n'}
+[2.195369] (object_detection_visual) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.202444] (-) TimerEvent: {}
+[2.263040] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.264568] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.264734] (object_detection_visual) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/radu/camera_detection_assignment/ws/src/object_detection_visual/include\n'}
+[2.264804] (object_detection_visual) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.266140] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.266221] (object_detection_visual) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.266959] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.267783] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.268505] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.269774] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.269856] (object_detection_visual) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.270499] (object_detection_visual) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.274437] (object_detection_visual) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.282491] (object_detection_visual) StdoutLine: {'line': b'-- Generating done\n'}
+[2.284002] (object_detection_visual) StdoutLine: {'line': b'-- Build files have been written to: /home/radu/camera_detection_assignment/ws/build/object_detection_visual\n'}
+[2.291553] (object_detection_visual) CommandEnded: {'returncode': 0}
+[2.293728] (object_detection_visual) JobProgress: {'identifier': 'object_detection_visual', 'progress': 'build'}
+[2.293961] (object_detection_visual) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/radu/camera_detection_assignment/ws/build/object_detection_visual', '--', '-j12', '-l12'], 'cwd': '/home/radu/camera_detection_assignment/ws/build/object_detection_visual', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'radu'), ('SSH_AGENT_PID', '2236'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib:/home/radu/ws_moveit2/install/moveit_visual_tools/lib:/home/radu/ws_moveit2/install/rviz_visual_tools/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib'), ('HOME', '/home/radu'), ('OLDPWD', '/home/radu/camera_detection_assignment'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install:/home/radu/ws_moveit2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'radu'), ('JOURNAL_STREAM', '8:44762'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib/pkgconfig:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib/pkgconfig'), ('SCONS_CPU', '10'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'radu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/rolling/bin:/home/radu/aos-platform/bin:/home/radu/.local/bin:/home/radu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/radu-XPS-15-7590:@/tmp/.ICE-unix/2265,unix/radu-XPS-15-7590:/tmp/.ICE-unix/2265'), ('INVOCATION_ID', 'fd4015f925084a9f9095af133e74a7f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/07c40ba3_53e6_4486_bf49_9fef09e79585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/radu/camera_detection_assignment/ws/build/object_detection_visual'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib/python3.8/site-packages:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/camera_detection_assignment/ws/install/gz-transport12:/home/radu/camera_detection_assignment/ws/install/gz-math7:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling')]), 'shell': False}
+[2.302554] (-) TimerEvent: {}
+[2.331776] (object_detection_visual) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target object_detection_visual\x1b[0m\n'}
+[2.402675] (-) TimerEvent: {}
+[2.455912] (object_detection_visual) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/object_detection_visual.dir/src/object_detection_visual_node.cpp.o\x1b[0m\n'}
+[2.502802] (-) TimerEvent: {}
+[2.603104] (-) TimerEvent: {}
+[2.703413] (-) TimerEvent: {}
+[2.803717] (-) TimerEvent: {}
+[2.903988] (-) TimerEvent: {}
+[3.004345] (-) TimerEvent: {}
+[3.104617] (-) TimerEvent: {}
+[3.204880] (-) TimerEvent: {}
+[3.305130] (-) TimerEvent: {}
+[3.405409] (-) TimerEvent: {}
+[3.505684] (-) TimerEvent: {}
+[3.605952] (-) TimerEvent: {}
+[3.706205] (-) TimerEvent: {}
+[3.806490] (-) TimerEvent: {}
+[3.906743] (-) TimerEvent: {}
+[4.006972] (-) TimerEvent: {}
+[4.107209] (-) TimerEvent: {}
+[4.207463] (-) TimerEvent: {}
+[4.307717] (-) TimerEvent: {}
+[4.407969] (-) TimerEvent: {}
+[4.508224] (-) TimerEvent: {}
+[4.608482] (-) TimerEvent: {}
+[4.708739] (-) TimerEvent: {}
+[4.808993] (-) TimerEvent: {}
+[4.909247] (-) TimerEvent: {}
+[5.009554] (-) TimerEvent: {}
+[5.109816] (-) TimerEvent: {}
+[5.210063] (-) TimerEvent: {}
+[5.310321] (-) TimerEvent: {}
+[5.410597] (-) TimerEvent: {}
+[5.510853] (-) TimerEvent: {}
+[5.611119] (-) TimerEvent: {}
+[5.711414] (-) TimerEvent: {}
+[5.811669] (-) TimerEvent: {}
+[5.911922] (-) TimerEvent: {}
+[6.012176] (-) TimerEvent: {}
+[6.112430] (-) TimerEvent: {}
+[6.212680] (-) TimerEvent: {}
+[6.312926] (-) TimerEvent: {}
+[6.413271] (-) TimerEvent: {}
+[6.513516] (-) TimerEvent: {}
+[6.613762] (-) TimerEvent: {}
+[6.714007] (-) TimerEvent: {}
+[6.814255] (-) TimerEvent: {}
+[6.869557] (object_detection_visual) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable object_detection_visual\x1b[0m\n'}
+[6.914379] (-) TimerEvent: {}
+[7.014656] (-) TimerEvent: {}
+[7.092044] (object_detection_visual) StdoutLine: {'line': b'[100%] Built target object_detection_visual\n'}
+[7.101533] (object_detection_visual) CommandEnded: {'returncode': 0}
+[7.114802] (-) TimerEvent: {}
+[7.127025] (object_detection_visual) JobProgress: {'identifier': 'object_detection_visual', 'progress': 'install'}
+[7.137098] (object_detection_visual) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/radu/camera_detection_assignment/ws/build/object_detection_visual'], 'cwd': '/home/radu/camera_detection_assignment/ws/build/object_detection_visual', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'radu'), ('SSH_AGENT_PID', '2236'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim/lib:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib:/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib:/home/radu/ws_moveit2/install/moveit_visual_tools/lib:/home/radu/ws_moveit2/install/rviz_visual_tools/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib'), ('HOME', '/home/radu'), ('OLDPWD', '/home/radu/camera_detection_assignment'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install:/home/radu/ws_moveit2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'radu'), ('JOURNAL_STREAM', '8:44762'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/radu/camera_detection_assignment/ws/install/gz-transport12/lib/pkgconfig:/home/radu/camera_detection_assignment/ws/install/gz-math7/lib/pkgconfig'), ('SCONS_CPU', '10'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'radu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/opt/ros/rolling/bin:/home/radu/aos-platform/bin:/home/radu/.local/bin:/home/radu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/radu-XPS-15-7590:@/tmp/.ICE-unix/2265,unix/radu-XPS-15-7590:/tmp/.ICE-unix/2265'), ('INVOCATION_ID', 'fd4015f925084a9f9095af133e74a7f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/07c40ba3_53e6_4486_bf49_9fef09e79585'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/radu/camera_detection_assignment/ws/build/object_detection_visual'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces/lib/python3.8/site-packages:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/radu/camera_detection_assignment/ws/install/ros_ign_interfaces:/home/radu/camera_detection_assignment/ws/install/ros_ign:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo_demos:/home/radu/camera_detection_assignment/ws/install/ros_ign_image:/home/radu/camera_detection_assignment/ws/install/ros_ign_gazebo:/home/radu/camera_detection_assignment/ws/install/ros_ign_bridge:/home/radu/camera_detection_assignment/ws/install/ros_gz_sim:/home/radu/camera_detection_assignment/ws/install/ros_gz_interfaces:/home/radu/camera_detection_assignment/ws/install/object_detection_visual:/home/radu/camera_detection_assignment/ws/install/gz-transport12:/home/radu/camera_detection_assignment/ws/install/gz-math7:/home/radu/ws_moveit2/install/moveit2_tutorials:/home/radu/ws_moveit2/install/moveit_visual_tools:/home/radu/ws_moveit2/install/rviz_visual_tools:/opt/ros/foxy:/opt/ros/rolling')]), 'shell': False}
+[7.145098] (object_detection_visual) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.145334] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/lib/object_detection_visual/object_detection_visual\n'}
+[7.146635] (object_detection_visual) StdoutLine: {'line': b'-- Set runtime path of "/home/radu/camera_detection_assignment/ws/install/object_detection_visual/lib/object_detection_visual/object_detection_visual" to ""\n'}
+[7.146821] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch\n'}
+[7.146965] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch/object_detection_visual.launch.py\n'}
+[7.147086] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models\n'}
+[7.147164] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models/wheeled_robot.sdf\n'}
+[7.147223] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz\n'}
+[7.147278] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz/wheeled_robot.rviz\n'}
+[7.147542] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/package_run_dependencies/object_detection_visual\n'}
+[7.147697] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/parent_prefix_path/object_detection_visual\n'}
+[7.147869] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.sh\n'}
+[7.148080] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.dsv\n'}
+[7.148323] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.sh\n'}
+[7.148496] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.dsv\n'}
+[7.148754] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.bash\n'}
+[7.148839] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.sh\n'}
+[7.148913] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.zsh\n'}
+[7.148970] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.dsv\n'}
+[7.149042] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.dsv\n'}
+[7.149167] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/packages/object_detection_visual\n'}
+[7.149311] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig.cmake\n'}
+[7.149393] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig-version.cmake\n'}
+[7.149504] (object_detection_visual) StdoutLine: {'line': b'-- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.xml\n'}
+[7.152569] (object_detection_visual) CommandEnded: {'returncode': 0}
+[7.198931] (object_detection_visual) JobEnded: {'identifier': 'object_detection_visual', 'rc': 0}
+[7.199618] (-) EventReactorShutdown: {}

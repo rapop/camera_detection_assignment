@@ -1,0 +1,28 @@
+[0.018s] Invoking command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --build /home/radu/camera_detection_assignment/ws/build/object_detection_visual -- -j12 -l12
+[0.085s] [100%] Built target object_detection_visual
+[0.097s] Invoked command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --build /home/radu/camera_detection_assignment/ws/build/object_detection_visual -- -j12 -l12
+[0.136s] Invoking command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --install /home/radu/camera_detection_assignment/ws/build/object_detection_visual
+[0.144s] -- Install configuration: ""
+[0.144s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/lib/object_detection_visual/object_detection_visual
+[0.144s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//launch/object_detection_visual.launch.py
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//models/wheeled_robot.sdf
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual//rviz/wheeled_robot.rviz
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/package_run_dependencies/object_detection_visual
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/parent_prefix_path/object_detection_visual
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.sh
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/ament_prefix_path.dsv
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.sh
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/environment/path.dsv
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.bash
+[0.145s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.sh
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.zsh
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/local_setup.dsv
+[0.146s] -- Installing: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.dsv
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/ament_index/resource_index/packages/object_detection_visual
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig.cmake
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/cmake/object_detection_visualConfig-version.cmake
+[0.146s] -- Up-to-date: /home/radu/camera_detection_assignment/ws/install/object_detection_visual/share/object_detection_visual/package.xml
+[0.147s] Invoked command in '/home/radu/camera_detection_assignment/ws/build/object_detection_visual' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/opt/ros/rolling /usr/bin/cmake --install /home/radu/camera_detection_assignment/ws/build/object_detection_visual
