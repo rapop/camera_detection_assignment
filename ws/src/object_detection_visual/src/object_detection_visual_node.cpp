@@ -36,9 +36,9 @@ void object_detection_visual_node::_on_boxes_3d_callback(const gz::msgs::Annotat
    
         geometry_msgs::msg::Pose pose;
 
-        pose.position.x = annotated_box.box().center().x();//annotated_box.box().center().z();   
-        pose.position.y = annotated_box.box().center().y();//-annotated_box.box().center().x();
-        pose.position.z = annotated_box.box().center().z();//-annotated_box.box().center().y();;
+        pose.position.x = annotated_box.box().center().x();  
+        pose.position.y = annotated_box.box().center().y();
+        pose.position.z = annotated_box.box().center().z();
 
         pose.orientation.x = annotated_box.box().orientation().x();
         pose.orientation.y = annotated_box.box().orientation().y();
