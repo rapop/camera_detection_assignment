@@ -9,7 +9,7 @@ Bounding box object detection in ROS2 and Gazebo from the [Bounding Box Camera S
 Developed and tested in an Ubuntu 20.04 environment.
 - Install [ros2-rolling](https://docs.ros.org/en/rolling/Installation.html).
 - Install [Gazebo garden](https://gazebosim.org/docs/garden/getstarted).
-- Other ros package might be required.
+- Other ros packages might be required.
 
 ## Run instructions
 - Build the ROS work space (see ROS tutorials).
