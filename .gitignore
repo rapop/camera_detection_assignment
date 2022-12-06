@@ -1,0 +1,5 @@
+**/build/
+**/install/
+**/share/
+**/log/
+**/bounding_box_3d_data/
