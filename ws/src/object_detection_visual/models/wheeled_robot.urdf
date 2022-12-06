@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<robot name="wheeled_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Base Link -->
+  <link name="chassis">
+    <collision>
+      <geometry>
+        <box size="2 1 0.5"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="2 1 0.5"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1.0"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="1.14395"/>
+      <inertia
+        ixx="0.126164" ixy="0.0" ixz="0.0"
+        iyy="0.416519" iyz="0.0"
+        izz="0.481014"/>
+    </inertial>
+  </link>
+
+  <link name="left_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.4" length="0.2"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.4" length="0.2"/>
+      </geometry>
+      <material name="red">
+        <color rgba="255 0 0 1.0"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="2"/>
+      <inertia
+        ixx="0.145833" ixy="0.0" ixz="0.0"
+        iyy="0.145833" iyz="0.0"
+        izz="0.125"/>
+    </inertial>
+  </link>
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="left_wheel"/>
+    <origin xyz="-0.5 0.6 0" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="right_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.4" length="0.2"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.4" length="0.2"/>
+      </geometry>
+      <material name="red">
+        <color rgba="255 0 0 1.0"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="2"/>
+      <inertia
+        ixx="0.145833" ixy="0.0" ixz="0.0"
+        iyy="0.145833" iyz="0.0"
+        izz="0.125"/>
+    </inertial>
+  </link>
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="chassis"/>
+    <child link="right_wheel"/>
+    <origin xyz="-0.5 -0.6 0" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="caster">
+    <collision>
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <sphere radius="0.2" />
+      </geometry>
+      <material name="red">
+        <color rgba="255 0 0 1.0"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="1"/>
+      <inertia
+        ixx="0.1" ixy="0.0" ixz="0.0"
+        iyy="0.1" iyz="0.0"
+        izz="0.1"/>
+    </inertial>
+  </link>
+  <joint name='caster_wheel' type='fixed'>
+    <parent link="chassis"/>
+    <child link="caster"/>
+    <origin xyz="0.8 0 -0.2" rpy="0 0 0"/>
+  </joint>
+
+
+  <link name="camera">
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.000166667" ixy="0.0" ixz="0.0"
+        iyy="0.000166667" iyz="0.0"
+        izz="0.000166667"/>
+    </inertial>
+  </link>
+  <joint name="chassis_camera" type="fixed">
+    <parent link="chassis"/>
+    <child link="camera"/>
+    <origin xyz="0.5 0 0.6" rpy="0 0 0"/>
+  </joint>
+  <gazebo reference="camera">
+    <sensor name="3d" type="boundingbox_camera">
+      <topic>boxes_3d</topic>
+      <camera>
+        <box_type>3d</box_type>
+        <horizontal_fov>1.57</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>600</height>
+        </image>
+        <clip>
+          <near>0.01</near>
+          <far>1000</far>
+        </clip>
+        <save enabled="true">
+          <path>bounding_box_3d_data</path>
+        </save>
+      </camera>
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+      <visualize>true</visualize>
+    </sensor>
+ </gazebo>
+
+ <gazebo>
+    <plugin
+      filename="libgz-sim-diff-drive-system.so"
+      name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>1.2</wheel_separation>
+      <wheel_radius>0.4</wheel_radius>
+      <odom_publish_frequency>1</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <!-- Moving Left-->
+    <plugin filename="gz-sim-triggered-publisher-system"
+            name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777234</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            linear: {x: 0.0}, angular: {z: 2.5}
+        </output>
+    </plugin>
+    <!-- Moving Forward-->
+    <plugin filename="gz-sim-triggered-publisher-system"
+            name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777235</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            linear: {x: 2.5}, angular: {z: 0.0}
+        </output>
+    </plugin>
+    <!-- Moving Right-->
+    <plugin filename="gz-sim-triggered-publisher-system"
+            name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777236</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            linear: {x: 0.0}, angular: {z: -2.5}
+        </output>
+    </plugin>
+    <!-- Moving Backward-->
+    <plugin filename="gz-sim-triggered-publisher-system"
+            name="gz::sim::systems::TriggeredPublisher">
+        <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+            <match field="data">16777237</match>
+        </input>
+        <output type="gz.msgs.Twist" topic="/cmd_vel">
+            linear: {x: -2.5}, angular: {z: 0.0}
+        </output>
+    </plugin>
+  </gazebo>
+
+</robot>

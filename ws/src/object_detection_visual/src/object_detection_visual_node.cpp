@@ -33,12 +33,13 @@ void object_detection_visual_node::_on_boxes_3d_callback(const gz::msgs::Annotat
     for (size_t i = 0; i < nb_of_boxes; i++)
     {
         const gz::msgs::AnnotatedOriented3DBox annotated_box = msg.annotated_box(i);
-        // std::cout << annotatedBox.DebugString() << std::endl;
    
         geometry_msgs::msg::Pose pose;
-        pose.position.x = annotated_box.box().center().z() + 10.5;
-        pose.position.y = -annotated_box.box().center().x();
-        pose.position.z = annotated_box.box().center().y() + 0.9;
+
+        pose.position.x = annotated_box.box().center().x();//annotated_box.box().center().z();   
+        pose.position.y = annotated_box.box().center().y();//-annotated_box.box().center().x();
+        pose.position.z = annotated_box.box().center().z();//-annotated_box.box().center().y();;
+
         pose.orientation.x = annotated_box.box().orientation().x();
         pose.orientation.y = annotated_box.box().orientation().y();
         pose.orientation.z = annotated_box.box().orientation().z();
@@ -50,7 +51,7 @@ void object_detection_visual_node::_on_boxes_3d_callback(const gz::msgs::Annotat
         colour.g = 1;
         colour.b = 0;
 
-        const std::string base_frame = "base_link";
+        const std::string base_frame = "kitti_camera";
 
         visualization_msgs::msg::Marker marker;
 
